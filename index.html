@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme / Personal Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <div class="page__container figma-frame">
+        
+        <!-- ================= ШАПКА ================= -->
+        <header class="header">
+            <a href="#" class="header__logo">
+                <img src="logo.svg" alt="Acme Logo"> 
+            </a>
+
+            <nav class="header__nav">
+                <a href="#" class="header__link">Sign in</a>
+                <a href="#" class="header__btn">Join The Community</a>
+            </nav>
+        </header>
+
+        <!-- ================= ГЛАВНЫЙ ЭКРАН ================= -->
+        <section class="hero">
+            
+            <div class="hero__content">
+                
+                <h1 class="hero__title">
+                    The platform for creative 
+                    
+                    <span class="hero__minds-wrapper">
+                        <span class="hero__text-blue">minds</span>
+                        <img src="minds-underline.svg" alt="Underline" class="hero__decoration">
+                    </span><span class="hero__text-black">.</span>
+                </h1>
+                
+                <p class="hero__subtitle">
+                    Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+                </p>
+                
+                <div class="hero__actions">
+                    <a href="#" class="hero__btn hero__btn--primary">Join The Community</a>
+                    <a href="#" class="hero__btn hero__btn--secondary">Sign in</a>
+                </div>
+
+                <div class="stats">
+                    
+                    <div class="stats__item">
+                        <span class="stats__number">27m</span>
+                        <span class="stats__label">Inspiration</span>
+                    </div>
+
+                    <img src="podlogo.svg" alt="Pod Logo" class="stats__divider">
+
+                    <div class="stats__item">
+                        <span class="stats__number">44k</span>
+                        <span class="stats__label">Collections</span>
+                    </div>
+
+                    <img src="podlogo.svg" alt="Pod Logo" class="stats__divider">
+
+                    <div class="stats__item">
+                        <span class="stats__number">2m+</span>
+                        <span class="stats__label">Creatives</span>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="hero__image-wrapper">
+                <img src="hero.svg" alt="Hero Image" class="hero__image">
+            </div>
+
+        </section>
+
+        <!-- ================= БЛОК: LATEST INSPIRATION ================= -->
+        <section class="latest-inspiration">
+            
+            <h2 class="latest-inspiration__title">Latest inspiration</h2>
+            
+            <div class="filters">
+                
+                <button class="filters__btn filters__btn--view-all">
+                    <span class="filters__text">View All</span>
+                    <span class="filters__badge filters__badge--blue">2.7k</span>
+                </button>
+
+                <button class="filters__btn filters__btn--illustration">
+                    <span class="filters__text">Illustration</span>
+                    <span class="filters__badge filters__badge--gray">1.2k</span>
+                </button>
+
+                <button class="filters__btn filters__btn--branding">
+                    <span class="filters__text">Branding</span>
+                    <span class="filters__badge filters__badge--gray">1.4k</span>
+                </button>
+
+                <button class="filters__btn filters__btn--product">
+                    <span class="filters__text">Product Design</span>
+                    <span class="filters__badge filters__badge--gray">1.7k</span>
+                </button>
+
+                <button class="filters__btn filters__btn--typography">
+                    <span class="filters__text">Typography</span>
+                    <span class="filters__badge filters__badge--gray">989</span>
+                </button>
+
+            </div>
+
+            <div class="gallery">
+                <img src="gallery.svg" alt="Latest Inspiration Work" class="gallery__image">
+            </div>
+
+        </section>
+
+        <!-- ================= БЛОК: TRENDING COLLECTIONS ================= -->
+        <section class="collections">
+            
+            <h2 class="collections__title">Trending collections</h2>
+
+            <div class="collections__grid">
+                <img src="1.svg" alt="Testimonial 1" class="collections__card">
+                <img src="2.svg" alt="Testimonial 2" class="collections__card">
+                <img src="3.svg" alt="Testimonial 3" class="collections__card">
+                <img src="4.svg" alt="Testimonial 4" class="collections__card">
+                <img src="5.svg" alt="Testimonial 5" class="collections__card">
+            </div>
+
+            <div class="collections__controls">
+                <img src="arrow-left.svg" alt="Arrow Left" class="collections__arrow">
+                <img src="arrow-right.svg" alt="Arrow Right" class="collections__arrow">
+            </div>
+
+        </section>
+
+        <!-- ================= БЛОК: JOIN COMMUNITY ================= -->
+        <section class="join">
+            
+            <h2 class="join__title">Join over 2M creatives from around the world</h2>
+
+            <div class="join__container">
+                
+                <div class="join__column">
+                    <div class="user-card">
+                        <img src="user-bg-1.svg" alt="Background 1" class="user-card__bg">
+                        <div class="user-card__avatar-wrapper">
+                            <img src="user-avatar-1.svg" alt="Avatar 1" class="user-card__avatar">
+                        </div>
+                        <h3 class="user-card__name">Daniel Khan</h3>
+                        <p class="user-card__handle">@art-daniel-k</p>
+                        <a href="#" class="user-card__btn">
+                            <svg class="user-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 2.5V9.5M2.5 6H9.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="user-card__btn-text">Follow</span>
+                        </a>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="user-bg-2.svg" alt="Background 2" class="user-card__bg">
+                        <div class="user-card__avatar-wrapper">
+                            <img src="user-avatar-2.svg" alt="Avatar 2" class="user-card__avatar">
+                        </div>
+                        <h3 class="user-card__name">Daniel Khan</h3>
+                        <p class="user-card__handle">@art-daniel-k</p>
+                        <a href="#" class="user-card__btn">
+                            <svg class="user-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 2.5V9.5M2.5 6H9.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="user-card__btn-text">Follow</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="join__column join__column--offset">
+                    <div class="user-card">
+                        <img src="user-bg-3.svg" alt="Background 3" class="user-card__bg">
+                        <div class="user-card__avatar-wrapper">
+                            <img src="user-avatar-3.svg" alt="Avatar 3" class="user-card__avatar">
+                        </div>
+                        <h3 class="user-card__name">Daniel Khan</h3>
+                        <p class="user-card__handle">@art-daniel-k</p>
+                        <a href="#" class="user-card__btn">
+                            <svg class="user-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 2.5V9.5M2.5 6H9.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="user-card__btn-text">Follow</span>
+                        </a>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="user-bg-4.svg" alt="Background 4" class="user-card__bg">
+                        <div class="user-card__avatar-wrapper">
+                            <img src="user-avatar-4.svg" alt="Avatar 4" class="user-card__avatar">
+                        </div>
+                        <h3 class="user-card__name">Daniel Khan</h3>
+                        <p class="user-card__handle">@art-daniel-k</p>
+                        <a href="#" class="user-card__btn">
+                            <svg class="user-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 2.5V9.5M2.5 6H9.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="user-card__btn-text">Follow</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="join__info">
+                    <img src="group-avatars.svg" alt="Group of avatars" class="join__group-img">
+                    <h3 class="join__info-title">More than a community</h3>
+                    <p class="join__info-desc">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking.
+                    </p>
+                    <a href="#" class="join__info-btn">
+                        <span class="join__info-btn-text">Join The Community</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= БЛОК: PRICING ================= -->
+        <section class="pricing">
+            
+            <h2 class="pricing__title">Become a member of the best creative community</h2>
+            
+            <div class="pricing__toggle">
+                <div class="pricing__toggle-slider">
+                    <span class="pricing__toggle-active">
+                        Yearly <span class="pricing__toggle-discount">-20%</span>
+                    </span>
+                </div>
+                <span class="pricing__toggle-inactive">Monthly</span>
+            </div>
+
+            <div class="pricing__cards">
+                
+                <!-- Pricing Card (Light) -->
+                <div class="pricing-card">
+                    <h3 class="pricing-card__name">Starter</h3>
+                    <div class="pricing-card__price">Free</div>
+                    <p class="pricing-card__desc">Explore the tool, save inspiration and create collections.</p>
+                    
+                    <a href="#" class="pricing-card__btn">Join The Community</a>
+                    
+                    <div class="pricing-card__features-title">Features Include:</div>
+                    
+                    <ul class="pricing-card__list">
+                        <li class="pricing-card__item">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Unlimited placeholder texts
+                        </li>
+                        <li class="pricing-card__item">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Consectetur adipiscing elit
+                        </li>
+                        <li class="pricing-card__item">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Excepteur sint occaecat cupidatat
+                        </li>
+                        <li class="pricing-card__item">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Officia deserunt mollit anim
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Pricing Card (Dark) -->
+                <div class="pricing-card pricing-card--dark">
+                    <div class="pricing-card__badge">
+                        <span class="pricing-card__badge-text">Most Popular</span>
+                    </div>
+
+                    <h3 class="pricing-card__name pricing-card__name--white">Business</h3>
+                    
+                    <img src="price-tag.svg" alt="$ Price" class="pricing-card__price-img">
+                    
+                    <p class="pricing-card__desc pricing-card__desc--light">Get unlimited access to our new mood boarding tool.</p>
+                    
+                    <a href="#" class="pricing-card__btn">Start Free Trial</a>
+                    
+                    <div class="pricing-card__features-title pricing-card__features-title--white">All free features, plus:</div>
+                    
+                    <ul class="pricing-card__list">
+                        <li class="pricing-card__item pricing-card__item--light">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Unlimited placeholder texts
+                        </li>
+                        <li class="pricing-card__item pricing-card__item--light">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Consectetur adipiscing elit
+                        </li>
+                        <li class="pricing-card__item pricing-card__item--light">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Excepteur sint occaecat cupidatat
+                        </li>
+                        <li class="pricing-card__item pricing-card__item--light">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Officia deserunt mollit anim
+                        </li>
+                        <li class="pricing-card__item pricing-card__item--light">
+                            <svg class="pricing-card__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3L4.5 8.5L2 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Excepteur sint occaecat cupidatat
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ================= БЛОК: ПЕРВЫЙ БАННЕР ================= -->
+        <section class="banner">
+            <div class="banner__wrapper">
+                <img src="banner-bg.svg" alt="Banner Background" class="banner__bg banner__bg--rotated-left">
+                <img src="banner-img.svg" alt="Promo Banner" class="banner__img">
+            </div>
+        </section>
+
+        <!-- ================= БЛОК: FAQ ================= -->
+        <section class="faq">
+            
+            <h2 class="faq__title">Question and answers</h2>
+
+            <div class="faq__grid">
+                <div class="faq__column">
+                    <div class="faq__item">
+                        <h3 class="faq__question">What is the difference between the Free and Paid versions?</h3>
+                        <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3 class="faq__question">Do you have student or non-profit discounts?</h3>
+                        <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3 class="faq__question">How is the price determined?</h3>
+                        <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+
+                <div class="faq__column">
+                    <div class="faq__item">
+                        <h3 class="faq__question">Do I need coding knowledge to use this product?</h3>
+                        <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3 class="faq__question">Is there a way to become an Affiliate reseller?</h3>
+                        <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3 class="faq__question">What forms of payment do you accept?</h3>
+                        <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= БЛОК FROM OUR BLOG ================= -->
+        <section class="blog">
+            
+            <h2 class="blog__title">From our blog</h2>
+
+            <div class="blog__grid">
+                
+                <div class="blog-card">
+                    <img src="blog-img-1.svg" alt="Blog Image 1" class="blog-card__image">
+                    <h3 class="blog-card__title">Concept Art & illustrations by Stef Euphoria</h3>
+                    <p class="blog-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <div class="blog-card__author">
+                        <img src="blog-avatar-1.svg" alt="Avatar" class="blog-card__avatar">
+                        <div class="blog-card__author-info">
+                            <span class="blog-card__by">By</span> <span class="blog-card__name">Knut Mayer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="blog-img-2.svg" alt="Blog Image 2" class="blog-card__image">
+                    <h3 class="blog-card__title" style="width: 17.375rem;">Patrick Chen's Branding by Thought & Found Studio</h3>
+                    <p class="blog-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <div class="blog-card__author">
+                        <img src="blog-avatar-2.svg" alt="Avatar" class="blog-card__avatar">
+                        <div class="blog-card__author-info">
+                            <span class="blog-card__by">By</span> <span class="blog-card__name">Samuel Regan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="blog-img-3.svg" alt="Blog Image 3" class="blog-card__image">
+                    <h3 class="blog-card__title">Soma Brewing Branding & Packaging by Quim Martin</h3>
+                    <p class="blog-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <div class="blog-card__author">
+                        <img src="blog-avatar-3.svg" alt="Avatar" class="blog-card__avatar">
+                        <div class="blog-card__author-info">
+                            <span class="blog-card__by">By</span> <span class="blog-card__name">Fabian Centero</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= ВТОРОЙ БАННЕР ================= -->
+        <section class="banner banner--bottom">
+            <div class="banner__wrapper">
+                <img src="banner-bg-2.svg" alt="Bottom Banner Background" class="banner__bg banner__bg--rotated-right">
+                <img src="banner-img-2.svg" alt="Promo Bottom Banner" class="banner__img">
+            </div>
+        </section>
+
+        <!-- ================= ФУТЕР (ПОДВАЛ) ================= -->
+        <footer class="footer">
+            <div class="footer__container">
+                
+                <div class="footer__top">
+                    <a href="#" class="footer__logo">
+                        <img src="logo.svg" alt="Acme Logo">
+                    </a>
+                    
+                    <div class="footer__form">
+                        <div class="footer__input-wrapper">
+                            <input type="text" class="footer__input" placeholder="Your email">
+                        </div>
+                        
+                        <button class="footer__btn">
+                            <span class="footer__btn-text">Join Newsletter</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    
+                    <div class="footer__links">
+                        About &nbsp; Get in touch &nbsp; Privacy & Terms
+                    </div>
+                    
+                    <div class="footer__socials">
+                        <a href="#"><img src="twitter.svg" alt="Twitter" class="footer__social-icon"></a>
+                        <a href="#"><img src="github.svg" alt="GitHub" class="footer__social-icon"></a>
+                        <a href="#"><img src="telegram.svg" alt="Telegram" class="footer__social-icon"></a>
+                    </div>
+
+                </div>
+                
+                <p class="footer__disclaimer">
+                    Some of our posts may contain affiliate links to partner brands. We earn a small commission if you click the link and make a purchase. There is no extra cost to you, so it's just a nice way to help support the site. All images, videos, and other content posted on the site is attributed to their creators and original sources. If you see something wrong here or you would like to have it removed, please <span class="footer__contact-text">contact us.</span>
+                </p>
+
+            </div>
+        </footer>
+
+    </div> 
+</body>
+</html>
