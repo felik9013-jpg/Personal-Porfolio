@@ -1070,3 +1070,341 @@ body {
     color: #3B82F6; 
     font-weight: 500; 
 }
+/* ========================================================= */
+/*       АДАПТИВ ПОД IPHONE 12 (MAX-WIDTH: 420PX)            */
+/* ========================================================= */
+@media screen and (max-width: 420px) {
+    /* 1. ГЛОБАЛЬНЫЕ НАСТРОЙКИ */
+    html {
+        font-size: 100%; /* Не уменьшаем базовый шрифт глобально, иначе текст станет нечитаемым */
+    }
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .page__container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* 2. ОБЩИЕ ОТСТУПЫ */
+    /* Заменяем огромные отступы 12.75rem (204px) на безопасные 20px */
+    .header, 
+    .hero, 
+    .latest-inspiration, 
+    .collections, 
+    .join, 
+    .pricing, 
+    .banner, 
+    .faq, 
+    .blog, 
+    .footer {
+        padding-left: 1.25rem !important; /* 20px */
+        padding-right: 1.25rem !important; /* 20px */
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* 3. HEADER */
+    .header {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .header__nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* 4. HERO SECTION */
+    .hero {
+        flex-direction: column-reverse; /* Картинка сверху, текст снизу (или наоборот по желанию) */
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 2rem;
+    }
+    .hero__content {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .hero__title {
+        font-size: 2.5rem !important; /* Уменьшаем с 4.5rem */
+        line-height: 1.2 !important;
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+        letter-spacing: normal !important;
+    }
+    .hero__subtitle {
+        font-size: 1rem !important;
+        width: 100% !important;
+        margin-bottom: 2rem !important;
+        text-align: center;
+    }
+    .hero__actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero__btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    .hero__image-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+    .hero__image {
+        max-width: 100%;
+        height: auto;
+    }
+    .hero__decoration {
+        display: none; /* Скрываем декор на мобильном */
+    }
+
+    /* 5. STATS */
+    .stats {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .stats__item {
+        align-items: center;
+        text-align: center;
+    }
+    .stats__divider {
+        display: none; /* Скрываем разделители */
+    }
+
+    /* 6. LATEST INSPIRATION & FILTERS */
+    .latest-inspiration__title {
+        width: 100% !important;
+        font-size: 2rem !important;
+        text-align: center;
+        height: auto !important;
+        margin-bottom: 2rem !important;
+    }
+    .filters {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .filters__btn {
+        /* Делаем кнопки адаптивными */
+        width: auto !important; 
+        padding: 0 1rem;
+        white-space: nowrap;
+    }
+    .gallery {
+        width: 100% !important;
+        margin-top: 2rem;
+    }
+    .gallery__image {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1/1; /* Квадратная картинка */
+    }
+
+    /* 7. COLLECTIONS */
+    .collections__title {
+        width: 100% !important;
+        font-size: 2rem !important;
+        text-align: center;
+        height: auto !important;
+        margin-bottom: 2rem !important;
+    }
+    .collections__grid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+        /* Скролл остается, но карточки должны быть видимы */
+    }
+    .collections__card {
+        width: 200px; /* Фиксируем ширину карточки для скролла */
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    .collections__controls {
+        padding-right: 0 !important;
+        justify-content: center;
+    }
+
+    /* 8. JOIN COMMUNITY */
+    .join__title {
+        width: 100% !important;
+        font-size: 2rem !important;
+        text-align: center;
+        margin-left: 0 !important;
+        height: auto !important;
+        margin-bottom: 2rem !important;
+    }
+    .join__container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .join__column {
+        width: 100%;
+        align-items: center;
+    }
+    .user-card {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+    .join__info {
+        margin-left: 0 !important;
+        margin-top: 2rem !important;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .join__group-img, 
+    .join__info-title, 
+    .join__info-desc {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 320px;
+    }
+    .join__info-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    /* 9. PRICING */
+    .pricing__title {
+        width: 100% !important;
+        font-size: 2rem !important;
+        height: auto !important;
+        margin-bottom: 2rem !important;
+    }
+    .pricing__cards {
+        flex-direction: column;
+        padding-left: 0 !important;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
+    .pricing-card {
+        width: 100%;
+        max-width: 340px;
+        height: auto !important;
+        padding: 1.5rem;
+    }
+    .pricing-card__badge {
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        padding: 0 1rem;
+    }
+
+    /* 10. BANNERS */
+    .banner {
+        padding-left: 0 !important;
+        margin-top: 3rem;
+    }
+    .banner__bg {
+        display: none; /* Скрываем тяжелые фоны на мобильном */
+    }
+    .banner__img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* 11. FAQ */
+    .faq__title {
+        width: 100% !important;
+        font-size: 2rem !important;
+        text-align: center;
+        height: auto !important;
+        margin-bottom: 2rem !important;
+    }
+    .faq__grid {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    .faq__column {
+        width: 100%;
+    }
+    .faq__question, 
+    .faq__answer {
+        width: 100% !important;
+        height: auto !important;
+        font-size: 1rem !important;
+    }
+
+    /* 12. BLOG */
+    .blog__title {
+        width: 100% !important;
+        font-size: 2rem !important;
+        text-align: center;
+        margin-left: 0 !important;
+        height: auto !important;
+        margin-bottom: 2rem !important;
+    }
+    .blog__grid {
+        flex-direction: column;
+        padding-left: 0 !important;
+        align-items: center;
+        width: 100%;
+    }
+    .blog-card {
+        width: 100%;
+        max-width: 340px;
+    }
+    .blog-card__image {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/9;
+    }
+
+    /* 13. FOOTER */
+    .footer {
+        padding-bottom: 2rem !important;
+    }
+    .footer__container {
+        width: 100%;
+    }
+    .footer__top {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .footer__form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+    .footer__input-wrapper {
+        width: 100%;
+    }
+    .footer__btn {
+        width: 100%;
+    }
+    .footer__btn-text {
+        position: static; /* Сброс абсолютного позиционирования текста */
+        text-align: center;
+    }
+    .footer__bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .footer__links {
+        width: 100%;
+        text-align: center;
+    }
+    .footer__disclaimer {
+        width: 100% !important;
+        height: auto !important;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
